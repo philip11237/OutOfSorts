@@ -4,11 +4,13 @@ public class Sorts{
   *@param data  the elements to be sorted.
   */
   public static void bubbleSort(int[] data){
-    for (int i=0;i<data.length-1;i++){
-      if (data[i]>data[i+1]){
-        int a=data[i];
-        data[i]=data[i+1];
-        data[i+1]=a;
+    for (int times=0;times<data.length-1;times++){
+      for (int i=0;i<data.length-times-1;i++){
+        if (data[i]>data[i+1]){
+          int a=data[i];
+          data[i]=data[i+1];
+          data[i+1]=a;
+        }
       }
     }
   }
