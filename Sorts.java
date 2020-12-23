@@ -19,13 +19,24 @@ public class Sorts{
     for (int times=0;times<data.length;times++){
       int smallest=times;
       for (int i=times;i<data.length;i++){
-          if (data[smallest]>data[i]){
-            smallest= i;
-          }
+        if (data[smallest]>data[i]){
+          smallest= i;
+        }
       }
       int a = data[times];
-    data[times]=data[smallest];
-    data[smallest]=a;
+      data[times]=data[smallest];
+      data[smallest]=a;
+    }
   }
+  public static void insertionSort(int[] data){
+    for (int i=0;i<data.length;i++){
+      int ii=i;
+      while  ((ii>0)&&(data[ii-1]>data[ii])) {
+      int a=data[ii];
+      data[ii]=data[ii-1];
+      data[ii-1]=a;
+    ii--;
+  }
+    }
   }
 }
