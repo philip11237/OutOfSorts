@@ -32,11 +32,11 @@ public class Sorts{
     for (int i=0;i<data.length;i++){
       int ii=i;
       while  ((ii>0)&&(data[ii-1]>data[ii])) {
-      int a=data[ii];
-      data[ii]=data[ii-1];
-      data[ii-1]=a;
-    ii--;
-  }
+        int a=data[ii];
+        data[ii]=data[ii-1];
+        data[ii-1]=a;
+        ii--;
+      }
     }
   }
 }
