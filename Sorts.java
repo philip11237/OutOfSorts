@@ -14,4 +14,15 @@ public class Sorts{
       }
     }
   }
+  public static void selectionSort(int[] data){
+
+    for (int times=0;times<data.length;times++){
+      int smallest=data[i];
+      for (int i=times;i<data.length-times;i++){
+          if (smallest>data[i]){
+            smallest= data[i];
+          }
+      }
+    }
+  }
 }
